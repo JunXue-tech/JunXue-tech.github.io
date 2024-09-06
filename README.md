@@ -18,7 +18,7 @@ Welcome to the personal homepage of **Jun Xue**, an Algorithm Engineer specializ
 
 ## Publications
 
-Jun Xue has published multiple papers on audio deepfake detection, neural networks, and signal processing in top international conferences and journals. A full list of publications can be found on his [Google Scholar](https://scholar.google.com.sg/citations?user=YxoCHH4AAAAJ&hl=zh-CN) profile.
+I has published multiple papers on audio deepfake detection, neural networks, and signal processing in top international conferences and journals. A full list of publications can be found on his [Google Scholar](https://scholar.google.com.sg/citations?user=YxoCHH4AAAAJ&hl=zh-CN) profile.
 
 ## Current Work
 
