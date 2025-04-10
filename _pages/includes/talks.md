@@ -1,0 +1,5 @@
+# 🎙 Talks
+- *12.2024*, "Opportunities and Challenges of Language Emotion in Real Applications: LLMs, Multimodal Incongruity, and Human-Robot Interaction". Tsinghua Laboratory of Brain and Intelligence, Tsinghua University (host: Prof. Dan Zhang)
+- *12.2024*, "Multi-view Cognitive State Detection Based on Pre-trained Speech and Language Models". Speech and Audio Technology Lab, Tsinghua University (host: Prof. Wei-Qiang Zhang)
+- *03.2024*, "Opportunities and Challenges of Speech Emotion Recognition in the Era of Foundation Models". Center for Interdisciplinary Research in Language Sciences, University of Science and Technology of China (host: Prof. Jiahong Yuan)
+- *11.2020*, "Affective Human-Robot Interaction". Cognitive Developmental Robotics Lab, University of Tokyo (host: Prof. Yukie Nagai)
