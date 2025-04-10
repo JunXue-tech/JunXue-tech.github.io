@@ -339,17 +339,55 @@
     })
 </script>
 
-<!-- 下面是访客统计和访客地图功能 -->
-<div class="w3-light-grey w3-center w3-padding-24">
-  Welcome to my website. Total Visitor:
-  <br>
-  <div align="center">
-    <a href='https://www.free-website-hit-counter.com'>
-      <img src='https://www.free-website-hit-counter.com/c.php?id=1433883&c=2' border='0' alt='Free Website Hit Counter'/>
-    </a>
+<!--下面是访客统计和访客地图功能-->
+  <div class="w3-light-grey w3-center w3-padding-24">
+
+    Welcome to my website. Total Visitor:
+
+  <!-- Default Statcounter code for Yunhe Wang's Homepage
+  https://www.wangyunhe.site -->
+  <div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=148388&s=2' border='0' alt='Free Website Hit Counter'></a><br / ><small></small></div> 
+  
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=d1b635&w=350&t=m&d=FZ6YoJewte9eFE0RyiexYKXXqTkY8kbxGGgO59XhucY&co=f1f1f1&ct=262121'></script>
+  
+  Copyright ©2023 By <a href="https://github.com/liliu-avril" title="W3.CSS" target="_blank" class="w3-hover-opacity">Li LIU (刘李)</a>
+  <!-- End of Statcounter Code -->
+
+  </div>
+ 
+
+
   </div>
 
-  <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=dlbG6S&cl=ffffff&w=a&t=tt&c=F67670|tewte9eE0RyieWKKqQkTKbkxCcg95XhucY&co=ffffff&ct=20121"></_
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 
   </body>
