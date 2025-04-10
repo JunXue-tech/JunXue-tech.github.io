@@ -9,31 +9,103 @@
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fdfdfd;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
     }
-    .sidebar {
-      min-height: 100vh;
-      background-color: #f8f9fa;
-      padding: 2rem 1rem;
+    .container-main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
     }
-    .sidebar img {
-      max-width: 100%;
-      border-radius: 50%;
+    .header {
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 2rem;
     }
-    .content {
-      padding: 2rem;
+    .nav-container {
+      display: flex;
+      justify-content: center;
+    }
+    .navbar-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .nav-item {
+      margin: 0 10px;
     }
     .nav-link {
       color: #333;
       font-weight: 500;
+      padding: 0.5rem 0;
     }
     .nav-link:hover {
-      text-decoration: underline;
+      color: #007bff;
+      text-decoration: none;
     }
-    .lang-toggle {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+    .content-wrapper {
+      display: flex;
+      margin-top: 2rem;
+    }
+    .sidebar {
+      width: 280px;
+      padding-right: 2rem;
+      border-right: 1px solid #eee;
+    }
+    .main-content {
+      flex: 1;
+      padding-left: 2rem;
+    }
+    .sidebar img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+    }
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .profile-title {
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .profile-info {
+      margin-bottom: 1.5rem;
+    }
+    .profile-info p {
+      margin-bottom: 0.5rem;
+    }
+    .social-icons {
+      margin-top: 1.5rem;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .news-item {
+      margin-bottom: 1.5rem;
+    }
+    .news-date {
+      font-weight: 600;
+      color: #555;
     }
     .paper-link {
       color: #007bff;
@@ -42,70 +114,93 @@
     .paper-link:hover {
       text-decoration: underline;
     }
-    .social-icons a {
-      margin-right: 10px;
-      font-size: 1.2rem;
-      color: #333;
+    .lang-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
     }
-    .social-icons a:hover {
-      color: #007bff;
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
+      .main-content {
+        padding-left: 0;
+      }
+      .navbar-nav {
+        justify-content: flex-start;
+      }
     }
   </style>
 </head>
 <body>
-<div class="container-fluid">
-  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-          <li class="nav-item"><a class="nav-link" href="#awards">Honors and Awards</a></li>
-          <li class="nav-item"><a class="nav-link" href="#research">Research Activities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
-          <li class="nav-item"><a class="nav-link" href="#grants">Grants</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-        </ul>
-        <div class="lang-toggle">
-          <a href="index.html" class="btn btn-outline-primary btn-sm me-2">EN</a>
-          <a href="index_zh.html" class="btn btn-outline-secondary btn-sm">中文</a>
+<div class="container-main">
+  <!-- Header with Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#awards">Honors and Awards</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research">Research Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
+            <li class="nav-item"><a class="nav-link" href="#grants">Grants</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          </ul>
         </div>
-      </div>
-    </nav>
-    <div class="row mt-2">
+      </nav>
+    </div>
+    <div class="lang-toggle">
+      <a href="index.html" class="btn btn-outline-primary btn-sm me-2">EN</a>
+      <a href="index_zh.html" class="btn btn-outline-secondary btn-sm">中文</a>
+    </div>
+  </header>
 
+  <!-- Main Content -->
+  <div class="content-wrapper">
     <!-- Sidebar -->
-    <nav class="col-md-3 sidebar">
-      <img src="assets/c58d5a7cc25dd127fd9928d961c6490.jpg" alt="Jun's Avatar" style="width: 160px; height: auto; border-radius: 50%;">
-      <h4 class="mt-3">Jun Xue</h4>
-      <p>AI Speech Algorithm Engineer @ iFLYTEK</p>
-      <p><strong>Email:</strong> <a href="mailto:junxue.tech@gmail.com">junxue.tech@gmail.com</a></p>
-      <p><strong>Location:</strong> Hefei, China</p>
-      <hr />
+    <aside class="sidebar">
+      <img src="assets/c58d5a7cc25dd127fd9928d961c6490.jpg" alt="Jun's Avatar">
+      <div class="profile-name">Jun Xue</div>
+      <div class="profile-title">AI Speech Algorithm Engineer @ iFLYTEK</div>
+      
+      <div class="profile-info">
+        <p><strong>Email:</strong> <a href="mailto:junxue.tech@gmail.com">junxue.tech@gmail.com</a></p>
+        <p><strong>Location:</strong> Hefei, China</p>
+      </div>
+      
       <div class="social-icons">
         <a href="mailto:junxue.tech@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/JunXue-tech" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
       </div>
-      <hr />
-    </nav>
+    </aside>
 
-    <!-- Content -->
-    <main class="col-md-9 content">
-      <div class="lang-toggle">
-        <a href="index.html" class="btn btn-outline-primary btn-sm">EN</a>
-        <a href="index_zh.html" class="btn btn-outline-secondary btn-sm">中文</a>
-      </div>
-
+    <!-- Main Content Area -->
+    <main class="main-content">
       <section id="about">
         <h2>About Me</h2>
         <p>I'm Jun Xue, an AI researcher currently working at iFLYTEK. My work focuses on deepfake speech detection, auditory attention decoding, and speech-to-speech translation. I hold an M.Sc. in Computer Science from Anhui University.</p>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <div class="news-item">
+          <span class="news-date">11.2023</span> - Microsoft
+        </div>
+        <!-- Add more news items here following the same format -->
       </section>
 
       <section id="research">
@@ -127,7 +222,7 @@
       </section>
 
       <section id="awards">
-        <h2>Awards</h2>
+        <h2>Honors and Awards</h2>
         <ul>
           <li>2023 National Scholarship</li>
           <li>2022 Excellent Thesis Funding</li>
