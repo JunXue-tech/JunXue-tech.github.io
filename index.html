@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jun Xue | Academic Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+    }
+    .sidebar {
+      min-height: 100vh;
+      background-color: #f8f9fa;
+      padding: 2rem 1rem;
+    }
+    .sidebar img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .nav-link {
+      color: #333;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .paper-link {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .paper-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 sidebar">
+      <img src="assets/cat.jpg" alt="Jun's Avatar">
+      <h4 class="mt-3">Jun Xue</h4>
+      <p>AI Speech Algorithm Engineer @ iFLYTEK</p>
+      <p><strong>Email:</strong> <a href="mailto:junxue.tech@gmail.com">junxue.tech@gmail.com</a></p>
+      <p><strong>Location:</strong> Hefei, China</p>
+      <hr />
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <main class="col-md-9 content">
+      <div class="lang-toggle">
+        <a href="#" class="btn btn-outline-secondary btn-sm">中文</a>
+        <a href="#" class="btn btn-outline-primary btn-sm">English</a>
+      </div>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Jun Xue, an AI researcher currently working at iFLYTEK. My work focuses on deepfake speech detection, auditory attention decoding, and speech-to-speech translation. I hold an M.Sc. in Computer Science from Anhui University.</p>
+      </section>
+
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Deepfake Speech Detection</li>
+          <li>Auditory Attention Decoding</li>
+          <li>Speech-to-Speech Translation</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul>
+          <li>[ICASSP 2023] <a class="paper-link" href="pdfs/icassp2023.pdf" target="_blank">Self-Distillation for Fake Speech Detection</a></li>
+          <li>[SPL 2024] <a class="paper-link" href="pdfs/spl2024.pdf" target="_blank">Ensemble Distillation for Lightweight Fake Speech Detection</a></li>
+          <li>[IW-DDA 2022] <a class="paper-link" href="pdfs/iwdda2022.pdf" target="_blank">F0+Spectrogram Features for Audio Deepfake Detection</a></li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <ul>
+          <li>2023 National Scholarship</li>
+          <li>2022 Excellent Thesis Funding</li>
+          <li>2021/2022/2023 First-Class Graduate Scholarship</li>
+          <li>2024 Anhui Provincial Outstanding Graduate</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>M.Sc. in Computer Science, Anhui University (2021–2024)</li>
+          <li>B.Sc. in Electronic Science, Anhui Sci & Tech University (2016–2020)</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>
