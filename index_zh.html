@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jun Xue | Academic Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+    }
+    .sidebar {
+      min-height: 100vh;
+      background-color: #f8f9fa;
+      padding: 2rem 1rem;
+    }
+    .sidebar img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .nav-link {
+      color: #333;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .paper-link {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .paper-link:hover {
+      text-decoration: underline;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 sidebar">
+      <img src="assets/cat.jpg" alt="Jun's Avatar">
+      <h4 class="mt-3">Jun Xue</h4>
+      <p>AI Speech Algorithm Engineer @ iFLYTEK</p>
+      <p><strong>Email:</strong> <a href="mailto:junxue.tech@gmail.com">junxue.tech@gmail.com</a></p>
+      <p><strong>Location:</strong> Hefei, China</p>
+      <hr />
+      <div class="social-icons">
+        <a href="mailto:junxue.tech@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/JunXue-tech" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+      <hr />
+      <ul class="nav flex-column mt-3">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#awards">所获奖项</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">教育经历</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <main class="col-md-9 content">
+      <div class="lang-toggle">
+        <a href="index.html" class="btn btn-outline-primary btn-sm">EN</a>
+        <a href="index_zh.html" class="btn btn-outline-secondary btn-sm">中文</a>
+      </div>
+
+      <section id="about">
+        <h2>关于我</h2>
+        <p>我叫薛军，目前就职于科大讯飞，担任语音算法工程师。研究方向包括伪造语音检测、听觉注意力解码及语音到语音翻译，硕士毕业于安徽大学计算机学院。</p>
+      </section>
+
+      <section id="research">
+        <h2>研究方向</h2>
+        <ul>
+          <li>伪造语音检测</li>
+          <li>听觉注意力解码</li>
+          <li>语音到语音翻译</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>代表性论文</h2>
+        <ul>
+          <li>[ICASSP 2023] <a class="paper-link" href="pdfs/icassp2023.pdf" target="_blank">用于伪造语音检测的自蒸馏方法</a></li>
+          <li>[SPL 2024] <a class="paper-link" href="pdfs/spl2024.pdf" target="_blank">轻量化伪造语音检测的集成蒸馏方法</a></li>
+          <li>[IW-DDA 2022] <a class="paper-link" href="pdfs/iwdda2022.pdf" target="_blank">融合F0与频谱的伪造语音检测方法</a></li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>所获奖项</h2>
+        <ul>
+          <li>2023 国家奖学金</li>
+          <li>2022 优秀硕士论文资助</li>
+          <li>2021/2022/2023 研究生一等奖学金</li>
+          <li>2024 安徽省优秀毕业生</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>教育经历</h2>
+        <ul>
+          <li>硕士，计算机科学，安徽大学（2021–2024）</li>
+          <li>本科，电子科学与技术，安徽理工大学（2016–2020）</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>
