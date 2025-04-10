@@ -26,18 +26,22 @@
     .nav-container {
       display: flex;
       justify-content: center;
+      white-space: nowrap;
+      overflow-x: auto;
+      padding-bottom: 5px;
     }
     .navbar-nav {
-      flex-wrap: wrap;
-      justify-content: center;
+      display: flex;
+      flex-wrap: nowrap;
     }
     .nav-item {
-      margin: 0 10px;
+      margin: 0 8px;
     }
     .nav-link {
       color: #333;
       font-weight: 500;
       padding: 0.5rem 0;
+      font-size: 0.95rem;
     }
     .nav-link:hover {
       color: #007bff;
@@ -119,6 +123,17 @@
       top: 1rem;
       right: 1rem;
     }
+    @media (max-width: 992px) {
+      .nav-container {
+        justify-content: flex-start;
+      }
+      .nav-item {
+        margin: 0 5px;
+      }
+      .nav-link {
+        font-size: 0.85rem;
+      }
+    }
     @media (max-width: 768px) {
       .content-wrapper {
         flex-direction: column;
@@ -133,9 +148,6 @@
       }
       .main-content {
         padding-left: 0;
-      }
-      .navbar-nav {
-        justify-content: flex-start;
       }
     }
   </style>
@@ -154,7 +166,6 @@
             <li class="nav-item"><a class="nav-link" href="#awards">Honors and Awards</a></li>
             <li class="nav-item"><a class="nav-link" href="#research">Research Activities</a></li>
             <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
-            <li class="nav-item"><a class="nav-link" href="#grants">Grants</a></li>
             <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
             <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
@@ -200,7 +211,6 @@
         <div class="news-item">
           <span class="news-date">11.2023</span> - Microsoft
         </div>
-        <!-- Add more news items here following the same format -->
       </section>
 
       <section id="research">
