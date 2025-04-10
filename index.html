@@ -1,295 +1,529 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+<title>Yuanchao Li - Homepage</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Yuanchao Li">
+<meta property="og:title" content="Yuanchao Li">
+
+
+  <link rel="canonical" href="https://yc-li20.github.io/">
+  <meta property="og:url" content="https://yc-li20.github.io/">
+
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jun Xue | Academic Homepage</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      line-height: 1.6;
-      font-weight: 400;
-    }
-    .container-main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 30px;
-    }
-    .header {
-      padding: 1.5rem 0;
-      border-bottom: 1px solid #eeeeee;
-      margin-bottom: 2rem;
-    }
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .navbar-nav {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      max-width: 900px;
-      margin-left: 2rem;
-    }
-    .nav-item {
-      flex: 1;
-      text-align: center;
-    }
-    .nav-item:first-child {
-      flex: 0;
-      text-align: left;
-      margin-right: auto;
-    }
-    .nav-link {
-      color: #555555;
-      font-weight: 500;
-      padding: 0.5rem 0;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-    .nav-link:hover {
-      color: #000000;
-      text-decoration: none;
-    }
-    .nav-item:first-child .nav-link {
-      color: #000000;
-      font-weight: 600;
-    }
-    .content-wrapper {
-      display: flex;
-      margin-top: 2rem;
-    }
-    .sidebar {
-      width: 280px;
-      padding-right: 2rem;
-    }
-    .main-content {
-      flex: 1;
-      padding-left: 2rem;
-    }
-    .sidebar img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1.5rem;
-      border: 1px solid #eeeeee;
-    }
-    .profile-name {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: #222222;
-    }
-    .profile-title {
-      color: #555555;
-      margin-bottom: 1.5rem;
-      font-weight: 400;
-    }
-    .profile-info {
-      margin-bottom: 1.5rem;
-    }
-    .profile-info p {
-      margin-bottom: 0.8rem;
-      font-size: 0.95rem;
-      color: #444444;
-    }
-    .profile-info a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .profile-info a:hover {
-      text-decoration: underline;
-    }
-    .social-icons {
-      margin-top: 1.5rem;
-    }
-    .social-icons a {
-      display: inline-block;
-      margin-right: 15px;
-      font-size: 1.3rem;
-      color: #666666;
-      transition: color 0.2s ease;
-    }
-    .social-icons a:hover {
-      color: #000000;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.7rem;
-      border-bottom: 1px solid #eeeeee;
-      color: #222222;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.7rem;
-      font-size: 0.95rem;
-    }
-    .paper-link {
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .paper-link:hover {
-      text-decoration: underline;
-    }
-    .news-item {
-      margin-bottom: 1.5rem;
-    }
-    .news-date {
-      font-weight: 500;
-      color: #555555;
-    }
-    .lang-toggle {
-      position: absolute;
-      top: 1.2rem;
-      right: 1.5rem;
-    }
-    @media (max-width: 992px) {
-      .navbar-nav {
-        margin-left: 1rem;
-      }
-    }
-    @media (max-width: 768px) {
-      .content-wrapper {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        padding-right: 0;
-        padding-bottom: 2rem;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #eeeeee;
-      }
-      .main-content {
-        padding-left: 0;
-      }
-      .nav-container {
-        flex-direction: column;
-      }
-      .navbar-nav {
-        flex-wrap: wrap;
-        margin-left: 0;
-        margin-top: 1rem;
-      }
-      .nav-item {
-        flex: none;
-        margin: 0 0.5rem 0.5rem 0;
-      }
-    }
-  </style>
+  <base target="_blank">
 </head>
-<body>
-<div class="container-main">
-  <!-- Header with Navigation -->
-  <header class="header">
-    <div class="nav-container">
-      <nav class="navbar navbar-expand-lg navbar-light px-0">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="#awards">Honors</a></li>
-            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-            <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          </ul>
-        </div>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TESF26FDJS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TESF26FDJS');
+    </script>
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#about-me">About Me</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-news">News</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-honors-and-awards">Honors and Awards</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-research-activities">Research Activities</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-talks">Talks</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-grants">Grants</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-experiences">Experiences</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-education">Education</a></li>
+          
+            <li class="masthead__menu-item"><a href="/#-publications">Publications</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
-    <div class="lang-toggle">
-      <a href="index.html" class="btn btn-outline-primary btn-sm me-2">EN</a>
-      <a href="index_zh.html" class="btn btn-outline-secondary btn-sm">中文</a>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <div class="content-wrapper">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <img src="assets/c58d5a7cc25dd127fd9928d961c6490.jpg" alt="Jun's Avatar">
-      <div class="profile-name">Jun Xue</div>
-      <div class="profile-title">AI Speech Algorithm Engineer @ iFLYTEK</div>
-      
-      <div class="profile-info">
-        <p><strong>Email:</strong> <a href="mailto:junxue.tech@gmail.com">junxue.tech@gmail.com</a></p>
-        <p><strong>Location:</strong> Hefei, China</p>
-      </div>
-      
-      <div class="social-icons">
-        <a href="mailto:junxue.tech@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/JunXue-tech" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-      </div>
-    </aside>
-
-    <!-- Main Content Area -->
-    <main class="main-content">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Jun Xue, an AI researcher currently working at iFLYTEK. My work focuses on deepfake speech detection, auditory attention decoding, and speech-to-speech translation. I hold an M.Sc. in Computer Science from Anhui University.</p>
-      </section>
-
-      <section id="news">
-        <h2>News</h2>
-        <div class="news-item">
-          <span class="news-date">11.2023</span> - Microsoft
-        </div>
-      </section>
-
-      <section id="research">
-        <h2>Research Interests</h2>
-        <ul>
-          <li>Deepfake Speech Detection</li>
-          <li>Auditory Attention Decoding</li>
-          <li>Speech-to-Speech Translation</li>
-        </ul>
-      </section>
-
-      <section id="publications">
-        <h2>Selected Publications</h2>
-        <ul>
-          <li>[ICASSP 2023] <a class="paper-link" href="pdfs/icassp2023.pdf" target="_blank">Self-Distillation for Fake Speech Detection</a></li>
-          <li>[SPL 2024] <a class="paper-link" href="pdfs/spl2024.pdf" target="_blank">Ensemble Distillation for Lightweight Fake Speech Detection</a></li>
-          <li>[IW-DDA 2022] <a class="paper-link" href="pdfs/iwdda2022.pdf" target="_blank">F0+Spectrogram Features for Audio Deepfake Detection</a></li>
-        </ul>
-      </section>
-
-      <section id="awards">
-        <h2>Honors and Awards</h2>
-        <ul>
-          <li>2023 National Scholarship</li>
-          <li>2022 Excellent Thesis Funding</li>
-          <li>2021/2022/2023 First-Class Graduate Scholarship</li>
-          <li>2024 Anhui Provincial Outstanding Graduate</li>
-        </ul>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-        <ul>
-          <li>M.Sc. in Computer Science, Anhui University (2021–2024)</li>
-          <li>B.Sc. in Electronic Science, Anhui Sci & Tech University (2016–2020)</li>
-        </ul>
-      </section>
-    </main>
   </div>
 </div>
-</body>
+
+    <div id="main" role="main">
+      
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person" class="profile_box">
+
+  <div class="author__avatar">
+    <img src="images/android-chrome-192x192.png" class="author__avatar" alt="Yuanchao Li">
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Yuanchao Li</h3>
+    <p class="author__bio">Final-Year PhD Student at University of Edinburgh</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
+    <ul class="author__urls social-icons">
+      
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Edinburgh, UK</li>
+      
+      
+      
+      
+        <li><a href="mailto:yuanchao.li@ed.ac.uk"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+       
+        <li><a href="https://www.researchgate.net/profile/Yuanchao-Li-5"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+      
+      
+        <li><a href="https://twitter.com/Li_Yuan_Chao"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/yuanchao-li-7a7217105"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/yc-li20"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?hl=en&user=WYSrzUsAAAAJ&view_op=list_works&sortby=pubdate"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+      
+      
+    </ul>
+      <div class="author__urls_sm">
+      
+      
+        <a href="mailto:yuanchao.li@ed.ac.uk"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
+      
+      
+       
+        <a href="https://www.researchgate.net/profile/Yuanchao-Li-5"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i></a>
+      
+      
+        <a href="https://twitter.com/Li_Yuan_Chao"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i></a>
+      
+      
+      
+      
+        <a href="https://www.linkedin.com/in/yuanchao-li-7a7217105"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
+      
+      
+      
+      
+      
+      
+      
+        <a href="https://github.com/yc-li20"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <a href="https://scholar.google.com/citations?hl=en&user=WYSrzUsAAAAJ&view_op=list_works&sortby=pubdate"><i class="fas fa-fw fa-graduation-cap"></i></a>
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+  
+  </div>
+
+    
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="headline" content="">
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            <p><span class="anchor" id="about-me"></span></p>
+
+<p>I am a PhD student at the <a href="https://www.cstr.ed.ac.uk">Centre for Speech Technology Research (CSTR)</a>, affiliated with the Institute for Language, Cognition and Computation (ILCC), University of Edinburgh. I am fortunate to be advised by <a href="https://homepages.inf.ed.ac.uk/clai/">Dr. Catherine Lai</a> and <a href="https://homepages.inf.ed.ac.uk/pbell1/">Prof. Peter Bell</a>, and fully funded by the School of Informatics. I was an Enrichment student at <img src="./images/ati.png" style="width: 4em;" /> and a research intern at <a href="https://www.microsoft.com/en-us/research/group/audio-and-acoustics-research-group/overview/">Audio and Acoustics Research Group</a> <img src="./images/msr.png" style="width: 5em;" />.</p>
+
+<p>My research aims to advance spoken language technologies in real-world applications by bridging different but relevant domains such as speech &amp; language, emotion &amp; health, humans &amp; machines, etc. In particular, my work focuses on problems that hinder the broader use of spoken language technologies in the wild.</p>
+
+<p>Before PhD study, I used to research on affective computing and human-robot interaction at Honda Innovation Lab, <a href="http://www.geminoid.jp/en/index.html">Hiroshi Ishiguro Lab ATR</a>, and <a href="http://sap.ist.i.kyoto-u.ac.jp/EN/">Speech and Audio Processing Lab</a>. I was fortunate to be advised by <a href="http://sap.ist.i.kyoto-u.ac.jp/members/kawahara/">Prof. Tatsuya Kawahara</a>, <a href="https://hb2504.utep.edu/Home/Profile?username=nigel">Prof. Nigel Ward</a>, and <a href="http://www.irc.atr.jp/~carlos/">Dr. Carlos Ishi</a>.</p>
+
+<h1 id="-news">🔥 News</h1>
+<ul>
+  <li><em>03.2025</em>, One paper accepted to ICME 2025. <a href="https://arxiv.org/abs/2409.15545">Addressing Emotion Bias in Music Emotion Recognition and Generation with Frechet Audio Distance</a></li>
+  <li><em>02.2025</em>, Received the <strong>ICASSP Travel Grant</strong> from the IEEE Signal Processing Society.  🎉</li>
+  <li><em>12.2024</em>, Four papers accepted to ICASSP 2025 (two as the first author and two as the project leader) !</li>
+  <li><em>11.2024</em>, Our special session <a href="https://sites.google.com/view/responsiblespeech/">Responsible Speech Foundation Models II</a> has been accepted to Interspeech 2025. Submit your papers and compete for the Best Paper Award!</li>
+  <li><em>09.2024</em>, Our <a href="https://sites.google.com/view/spandldeteriorate">SpandLDeteriorate workshop</a> has been accepted to ACM MM Asia 2024. Looking forward to your papers!</li>
+  <li><em>08.2024</em>, Three papers accepted to SLT 2024 (two as the first author and one as the co-first author)!</li>
+  <li><em>04.2024</em>, Our <a href="https://sites.google.com/view/gensec-challenge">GenSEC challenge</a> has been accepted to SLT 2024. Looking forward to your papers!</li>
+  <li><em>03.2024</em>, We won the <strong>1st place (and $1,000)</strong> out of 31 teams in Task 1 - Categorical Emotion Recognition at <a href="https://www.odyssey2024.org/emotion-recognition-challenge">Odyssey 2024 Emotion Recognition Challenge</a>.  🎉</li>
+  <li><em>02.2024</em>, One paper accepted to ICASSP 2024 SASB workshop: <a href="https://arxiv.org/abs/2402.02617">Layer-Wise Analysis of Self-Supervised Acoustic Word Embeddings: A Study on Speech Emotion Recognition</a></li>
+  <li><em>01.2024</em>, Our special session <a href="https://sites.google.com/view/responsiblespeech/">Responsible Speech Foundation Models</a> has been accepted to Interspeech 2024. Looking forward to your papers!</li>
+  <li><em>11.2023</em>, <a href="https://github.com/microsoft/fadtk">Microsoft FADTK</a>, a Frechet audio distance toolkit has been released, to which I contributed its speech models.</li>
+  <li><em>09.2023</em>, Received the <strong>IEEE SPS Scholarship</strong> from the IEEE Signal Processing Society.  🎉</li>
+  <li><em>09.2023</em>, Received the <strong>Outstanding Paper Award</strong> at the SAI workshop, ACII 2023, MIT Media Lab.  🎉</li>
+  <li><em>06.2023</em>, Our grant proposal (as Co-Investigator) <strong>Development of A Human-Centric Elderly Driving Education System</strong> has been accepted by the Inter-University Research Institute Corporation, Research Organization of Information and Systems.</li>
+  <li><em>03.2023</em>, Received the <strong>Gary Marsden Travel Award</strong> from ACM SIGCHI.  🎉</li>
+</ul>
+
+<h1 id="-honors-and-awards">🎖 Honors and Awards</h1>
+<ul>
+  <li><em>2025</em>, ICASSP Travel Grant, IEEE Signal Processing Society</li>
+  <li><em>2024</em>, 3rd Place Award, 3-Min Thesis Competition, Students of Society for Affective Science</li>
+  <li><em>2024</em>, 1st Place Award, Odyssey 2024 Emotion Recognition Challenge</li>
+  <li><em>2023</em>, IEEE SPS Scholarship, IEEE Signal Processing Society</li>
+  <li><em>2023</em>, Outstanding Paper Award, SAI workshop, ACII 2023</li>
+  <li><em>2023</em>, Gary Marsden Travel Award, ACM SIGCHI</li>
+  <li><em>2022</em>, Enrichment Student Award, Alan Turing Institute</li>
+  <li><em>2021</em>, Fully-Funded PhD Scholarship, University of Edinburgh</li>
+  <li><em>2016</em>, Seiwa International Scholarship, Kyoto University</li>
+  <li><em>2013</em>, 3rd Class Academic Excellence Scholarship, NUPT</li>
+</ul>
+
+<h1 id="-research-activities">💻 Research Activities</h1>
+<p><strong><em>- Organizing Committee -</em></strong></p>
+<ul>
+  <li><a href="https://sites.google.com/view/spandldeteriorate">Workshop on Multi-Biological Sensing Data for Speech and Language Deterioration Prediction</a> at ACM MM Asia 2024</li>
+  <li><a href="https://sites.google.com/view/gensec-challenge">GenSEC (old name: GenASR) challenge</a> at SLT 2024</li>
+  <li>Special Session at Interspeech 2024: <a href="https://sites.google.com/view/responsiblespeech/">Responsible Speech Foundation Models</a></li>
+  <li><a href="https://sites.google.com/view/uk-sigmm">UK Special Interest Group in Speech-Based Multimodal Information Processing</a></li>
+  <li><a href="https://conferences.inf.ed.ac.uk/ukspeech2022/">UK Speech 2022</a></li>
+</ul>
+
+<p><strong><em>- Program Committee -</em></strong></p>
+<ul>
+  <li>Interspeech Young Female Researchers in Speech Workshop <a href="https://sites.google.com/view/yfrsw-2024/">2024</a>, <a href="https://sites.google.com/view/yfrsw-2022/">2022</a></li>
+  <li><a href="https://icmi.acm.org/2021/index.php?id=cfdc">ICMI 2021 Doctoral Consortium</a></li>
+</ul>
+
+<p><strong><em>- Journal Review -</em></strong></p>
+<ul>
+  <li>IEEE Transactions on Affective Computing (2)</li>
+  <li>Computer Speech and Language (2)</li>
+  <li>IEEE Transactions on Audio, Speech and Language Processing (1)</li>
+  <li>Speech Communication (1)</li>
+  <li>Computers in Human Behavior (1)</li>
+  <li>Journal of Rehabilitation and Assistive Technologies Engineering (1)</li>
+  <li>Pattern Analysis and Applications (1)</li>
+  <li>Robotics and Autonomous Systems (1)</li>
+</ul>
+
+<p><strong><em>- Conference Review -</em></strong></p>
+<ul>
+  <li>ICASSP’23-25, Interspeech’23-25, ICME’25, IJCNN’25, ASRU’23, SLT’22-24, UK Speech’22</li>
+  <li>Interspeech Young Female Researchers in Speech Workshop’24 &amp; 22</li>
+  <li>CHI’23 Late-Breaking Work</li>
+  <li>IJCLR’23 CogAI Workshop</li>
+  <li>ICMI’21 Late-Breaking Report &amp; Doctoral Consortium</li>
+  <li>HRI’20 Late-Breaking Report</li>
+</ul>
+
+<p><strong><em>- Organizations &amp; Communities -</em></strong></p>
+<ul>
+  <li>ACM, AAAC, ISCA, IEEE, IEEE Signal Processing Society, SIGCHI, UK Speech, UK-SIGMM, Alan Turing Institute</li>
+</ul>
+
+<h1 id="-talks">🎙 Talks</h1>
+<ul>
+  <li><em>12.2024</em>, “Opportunities and Challenges of Language Emotion in Real Applications: LLMs, Multimodal Incongruity, and Human-Robot Interaction”. Tsinghua Laboratory of Brain and Intelligence, Tsinghua University (host: Prof. Dan Zhang)</li>
+  <li><em>12.2024</em>, “Multi-view Cognitive State Detection Based on Pre-trained Speech and Language Models”. Speech and Audio Technology Lab, Tsinghua University (host: Prof. Wei-Qiang Zhang)</li>
+  <li><em>03.2024</em>, “Opportunities and Challenges of Speech Emotion Recognition in the Era of Foundation Models”. Center for Interdisciplinary Research in Language Sciences, University of Science and Technology of China (host: Prof. Jiahong Yuan)</li>
+  <li><em>11.2020</em>, “Affective Human-Robot Interaction”. Cognitive Developmental Robotics Lab, University of Tokyo (host: Prof. Yukie Nagai)</li>
+</ul>
+
+<h1 id="-grants">💰 Grants</h1>
+<ul>
+  <li><em>06.2023</em>, “Development of A Human-Centric Elderly Driving Education System”, Co-Investigator, ¥800,000. Strategic Research Project “2023-SRP-06”, Research Organization of Information and Systems</li>
+</ul>
+
+<h1 id="-experiences">👔 Experiences</h1>
+<p><strong><em>- Teaching -</em></strong></p>
+<ul>
+  <li>TA (Coursework marker), Automatic Speech Recognition, University of Edinburgh, 2023 &amp; 2024</li>
+  <li>TA (Tutor, demonstrator, and project marker), System Design Project, University of Edinburgh, 2023</li>
+  <li>TA (Coursework and exam marker), Machine Learning, University of Edinburgh, 2022 &amp; 2024</li>
+</ul>
+
+<p><strong><em>- Supervision -</em></strong></p>
+<ul>
+  <li>
+    <p>Cross-lingual Speech Emotion Recognition and Speech Emotion Diarisation: A Comparative Study between Humans and Machines</p>
+
+    <p>Zhichen Han, MSc dissertation 2024/25 (Distinction), University of Edinburgh</p>
+  </li>
+  <li>
+    <p>Revisiting the Shared Suprasegmental Acoustics Between Emotional Speech and Song through Self-Supervised Learning Models</p>
+
+    <p>Yujia Sun, MSc dissertation 2024/25 (Distinction), University of Edinburgh</p>
+  </li>
+  <li>
+    <p>Layerwise Analysis of HuBERT Acoustic Word Embeddings in the Context of Speech Emotion Recognition</p>
+
+    <p>Alexandra Saliba, MSc dissertation 2023/24 (Distinction), University of Edinburgh</p>
+  </li>
+  <li>
+    <p>Hierarchical Cross-Modal Transformer and A Study of Cross-Modal Attention for Affective Computing</p>
+
+    <p>Yaoting Wang, MSc dissertation 2022/23 (Distinction), University of Edinburgh</p>
+  </li>
+  <li>
+    <p>A Cross-Domain Study of Crossmodal Attention Based Multimodal Emotion Recognition</p>
+
+    <p>Junling Liu, MSc dissertation 2021/22, University of Edinburgh</p>
+  </li>
+</ul>
+
+<p><strong><em>- Working -</em></strong></p>
+<ul>
+  <li>Research Intern, Microsoft Research Audio and Acoustics Group</li>
+  <li>Researcher, Honda R&amp;D Innovation Lab</li>
+  <li>R&amp;D Engineer, NTT Data R&amp;D headquarters</li>
+  <li>Student Researcher, ERATO ISHIGURO Symbiotic HRI Project, ATR</li>
+</ul>
+
+<h1 id="-education">📖 Education</h1>
+<ul>
+  <li>Ph.D. Candidate, Informatics, University of Edinburgh</li>
+  <li>M.Sc., Intelligence Science and Technology, Kyoto University</li>
+  <li>B.Eng., Electronic and Information Engineering, Nanjing University of Posts and Telecommunications</li>
+</ul>
+
+<h1 id="-publications">📝 Publications</h1>
+
+<p><strong><em>- Papers -</em></strong></p>
+<ul>
+  <li>See my <a href="https://scholar.google.com/citations?hl=en&amp;user=WYSrzUsAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a></li>
+</ul>
+
+<p><strong><em>- Patents -</em></strong></p>
+<ul>
+  <li><a href="https://patents.google.com/patent/US11107464B2/en">Feeling estimation device, feeling estimation method, and storage medium</a>. US11107464B2, JP2020091302A, CN111341349A</li>
+  <li><a href="https://patents.google.com/patent/US11443759B2/en">Information processing apparatus, information processing method, and storage medium</a>. US11443759B2, JP2021026130A, CN112349301A</li>
+  <li><a href="https://patents.google.com/patent/US11710499B2/en">Information-processing device, vehicle, computer-readable storage medium, and information-processing method</a>. US11710499B2, JP2021124642A, CN113221933A</li>
+</ul>
+
+<p><strong><em>- Technical Reports -</em></strong></p>
+<ul>
+  <li>
+    <p>Crossmodal ASR Error Correction with Discrete Speech Units</p>
+
+    <p><strong>Yuanchao Li</strong>, Pinzhen Chen, Peter Bell, Catherine Lai. UK Speech. 2024</p>
+  </li>
+  <li>
+    <p>Multimodal Dyadic Impression Recognition via Listener Adaptive Cross-Domain Fusion</p>
+
+    <p><strong>Yuanchao Li</strong>, Peter Bell, Catherine Lai. UK Speech. 2023</p>
+  </li>
+  <li>
+    <p>Exploration of A Self-Supervised Speech Model: A Study on Emotional Corpora</p>
+
+    <p><strong>Yuanchao Li</strong>, Yumnah Mohamied, Peter Bell, Catherine Lai. UK Speech. 2022</p>
+  </li>
+  <li>
+    <p>An Extensible End-to-End Multitask Learning Model for Recognizing Driver States</p>
+
+    <p><strong>Yuanchao Li</strong>. The 12th Honda R&amp;D Technical Forum. 2019</p>
+  </li>
+  <li>
+    <p>Processing User States in Spoken Dialog Systems for Human-Robot Interaction</p>
+
+    <p><strong>Yuanchao Li</strong>. International Design Symposium in Kyoto. 2017</p>
+  </li>
+  <li>
+    <p>Assessment Selection for Human-Robot Interaction based on Emotion Recognition Combining Prosody and Text Information</p>
+
+    <p><strong>Yuanchao Li</strong>, Tatsuya Kawahara. The 44th Kansai Joint Speech Seminar. 2016</p>
+  </li>
+</ul>
+
+<p><strong><em>- Book Translation -</em></strong></p>
+<ul>
+  <li>
+    <p>The Easiest Handbook for Machine Learning Project: How to Implement AI (Japanese to Chinese)</p>
+
+    <p>いちばんやさしい機械学習プロジェクトの教本 – 人気講師が教えるAIを導入する方法</p>
+
+    <p><a href="https://item.jd.com/13218999.html">超简单的机器学习 – 人气讲师为你讲解AI在工作中的应用</a></p>
+  </li>
+  <li>
+    <p>The Easiest Handbook for Artificial Intelligence Business: Commercializing AI and Machine Learning (Japanese to Chinese)</p>
+
+    <p>いちばんやさしい人工知能ビジネスの教本 – 人気講師が教えるAI・機械学習の事業化</p>
+
+    <p><a href="https://item.jd.com/13268339.html">超简单的人工智能 – 人气讲师为你讲解AI商业应用</a></p>
+  </li>
+</ul>
+
+<p><strong><em>- Media Articles -</em></strong></p>
+
+<ul>
+  <li><a href="https://syncedreview.com/2017/07/25/amazon-is-building-its-grocery-empire/">Amazon is Building its Grocery Empire</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/07/20/apple-is-in-a-dilemma-on-iphones-10-year-old-birthday/">Apple is in a Dilemma on iPhone’s 10-year-old Birthday</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/06/27/conversational-systems-a-general-review/">Conversational Systems: A General Review</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/06/09/does-fitness-data-make-the-average-person-healthier/">Does Fitness Data Make the Average Person Healthier</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/05/30/25-tweets-to-know-you-a-new-model-to-predict-personality-with-social-media/">25 Tweets to Know You: A New Model to Predict Personality with Social Media</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/05/12/why-alphago-is-not-ai/">Why AlphaGo is not AI</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/04/28/artificial-intelligence-is-the-new-electricity-andrew-ng/">Artificial Intelligence is the New Electricity – Andrew Ng</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/04/27/the-time-to-marry-ai-may-come-soon/">The Time to Marry AI May Come Soon</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/03/24/erica-the-erato-intelligent-conversational-android/">ERICA: The ERATO Intelligent Conversational Android</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/03/15/statistical-spoken-dialogue-systems-and-the-challenges-for-machine-learning/">Statistical Spoken Dialogue Systems and the Challenges for Machine Learning</a>. Synced Review</li>
+  <li><a href="https://syncedreview.com/2017/03/14/emotional-intelligence-is-the-future-of-artificial-intelligence/">Emotional Intelligence is the Future of Artificial Intelligence</a>. Synced Review</li>
+</ul>
+
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <script src="assets/js/main.min.js"></script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', "");
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        
+        var gsDataBaseUrl = 'https://raw.githubusercontent.com/yc-li20/yc-li20.github.io/'
+        
+        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+            var totalCitation = data['citedby']
+            document.getElementById('total_cit').innerHTML = totalCitation;
+            var citationEles = document.getElementsByClassName('show_paper_citations')
+            Array.prototype.forEach.call(citationEles, element => {
+                var paperId = element.getAttribute('data')
+                var numCitations = data['publications'][paperId]['num_citations']
+                element.innerHTML = '| Citations: ' + numCitations;
+            });
+        });
+    })
+</script>
+
+
+
+  </body>
 </html>
