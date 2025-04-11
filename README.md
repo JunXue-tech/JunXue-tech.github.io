@@ -76,10 +76,10 @@ A：GitHub Pages最长需要2分钟构建，可强制刷新（Ctrl+F5）
 ---
 
 🔄 **最近更新**  
-![GitHub last commit]([https://img.shields.io/github/last-commit/JunXue-tech/JunXue-tech.github.io](https://www.junxue.tech/))
+![GitHub last commit](https://img.shields.io/github/last-commit/JunXue-tech/JunXue-tech.github.io)
 
 ⭐ **如果觉得有用，请给个Star！**  
-[![Star]](https://www.junxue.tech/)
+[![Star](https://img.shields.io/github/stars/JunXue-tech/JunXue-tech.github.io?style=social)](https://github.com/JunXue-tech/JunXue-tech.github.io)
 
 ## 📊 添加访客统计与地图功能
 
