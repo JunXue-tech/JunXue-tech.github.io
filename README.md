@@ -1,6 +1,6 @@
 # 🚀 JunXue-tech 个人主页项目
 
-![GitHub Pages](https://www.junxue.tech/)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
 
 > 纯静态个人主页模板，无需服务器，Fork即可使用
 
