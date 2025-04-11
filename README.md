@@ -1,4 +1,15 @@
-# 🚀 JunXue-tech 个人主页项目
+# 🚀 JunXue-tech 个人主页项目 | JunXue-tech Personal Homepage Project
+
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
+
+> 🇨🇳 本项目是一个纯静态的个人主页模板，无需服务器，Fork 即可使用  
+> 🇺🇸 This is a purely static personal homepage template. No server is needed — just Fork and use.
+
+---
+
+🈯 切换语言 / Switch Language: [中文](#🚀-junxue-tech-个人主页项目--junxue-tech-personal-homepage-project) | [English](#-junxue-tech-personal-homepage-project)
+
+# 🚀 JunXue-tech.github.io 个人主页项目
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
 
@@ -34,6 +45,7 @@
 主要修改文件：
 ```bash
 index.html      # 修改主页内容
+_pages/*.html   # 编辑各子页面
 images/         # 替换您的图片
 ```
 
