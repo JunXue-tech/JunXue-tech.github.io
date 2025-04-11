@@ -106,4 +106,90 @@ A：GitHub Pages最长需要2分钟构建，可强制刷新（Ctrl+F5）
 
 ## <h2 id="english">🇺🇸 English Instructions</h2>
 
-🚧 English content coming soon... You can translate the above sections for international audiences!
+## 📁 Project Structure
+```
+.
+├── CNAME            # Custom domain config
+├── _data/           # Data files
+├── _includes/       # HTML component fragments
+├── _layouts/        # Page layout templates
+├── _pages/          # Content pages
+├── _sass/           # SCSS style files
+├── assets/          # Static resources
+│   └── js/vendor/   # Third-party libraries (including jQuery)
+├── images/          # Image assets
+└── index.html       # Website homepage
+```
+
+## 🛠️ Quick Start Guide
+
+### 1. Fork This Repo
+Click the `Fork` button on the top right to copy the project to your GitHub.
+
+### 2. Rename Your Repository
+Rename it to:
+```
+your_username.github.io
+```
+
+### 3. Edit Content
+Main files to modify:
+```bash
+index.html      # Edit homepage content
+images/         # Replace with your own images
+```
+
+### 4. Enable GitHub Pages
+1. Go to Settings → Pages  
+2. Choose the `main` branch as the source  
+3. Visit your site at `https://your_username.github.io`
+
+## ⚙️ Key Configurations
+
+### Custom Domain
+1. Create/Edit the `CNAME` file  
+2. Add your domain (e.g., `example.com`)
+
+### SEO Settings
+Edit the `<head>` section in `index.html`:
+```html
+<title>Your Name</title>
+<meta name="description" content="Personal profile">
+```
+
+## 🌈 Theme Customization
+Modify these folders to customize styles:
+```
+_sass/          # SCSS variables
+assets/css/     # Compiled CSS
+```
+
+## 📦 Included Libraries
+- jQuery (in `assets/js/vendor/jquery/`)
+- Font Awesome (via CDN)
+
+## ❓ FAQ
+**Q: How to add a new page?**  
+A: Create a new HTML file in `_pages/`, then add it to the navigation bar.
+
+**Q: Changes not showing up?**  
+A: GitHub Pages can take up to 2 minutes to build. Try refreshing with Ctrl+F5.
+
+---
+
+🔄 **Last Update**  
+![GitHub last commit](https://img.shields.io/github/last-commit/JunXue-tech/JunXue-tech.github.io)
+
+⭐ **If this helped you, give it a Star!**  
+[![Star](https://img.shields.io/github/stars/JunXue-tech/JunXue-tech.github.io?style=social)](https://github.com/JunXue-tech/JunXue-tech.github.io)
+
+## 📊 Add Visitor Counter & Map
+
+### Visitor Counter
+Use this site to generate HTML code for embedding:
+👉 [https://www.free-website-hit-counter.com/](https://www.free-website-hit-counter.com/)
+
+### Visitor Map
+Register and configure at:
+👉 [https://clustrmaps.com/](https://clustrmaps.com/)
+
