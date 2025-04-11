@@ -1,3 +1,9 @@
+<p align="center">
+  🈯 <strong>切换语言 / Switch Language:</strong>
+  <a href="#中文">中文</a> |
+  <a href="#english">English</a>
+</p>
+
 # 🚀 JunXue-tech 个人主页项目 | JunXue-tech Personal Homepage Project
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
@@ -7,8 +13,7 @@
 
 ---
 
-🈯 切换语言 / Switch Language: [中文](#🚀-junxue-tech-个人主页项目--junxue-tech-personal-homepage-project) | [English](#-junxue-tech-personal-homepage-project)
-
+## <h2 id="中文">🇨🇳 中文使用说明</h2>
 
 ## 📁 项目目录结构
 ```
@@ -40,7 +45,6 @@
 主要修改文件：
 ```bash
 index.html      # 修改主页内容
-_pages/*.html   # 编辑各子页面
 images/         # 替换您的图片
 ```
 
@@ -97,3 +101,9 @@ A：GitHub Pages最长需要2分钟构建，可强制刷新（Ctrl+F5）
 ### 添加访客地图显示
 注册并使用以下服务，可以在您的页面显示来自世界各地的访客分布地图：
 👉 [https://clustrmaps.com/](https://clustrmaps.com/)
+
+---
+
+## <h2 id="english">🇺🇸 English Instructions</h2>
+
+🚧 English content coming soon... You can translate the above sections for international audiences!
