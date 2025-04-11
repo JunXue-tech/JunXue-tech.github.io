@@ -9,11 +9,6 @@
 
 🈯 切换语言 / Switch Language: [中文](#🚀-junxue-tech-个人主页项目--junxue-tech-personal-homepage-project) | [English](#-junxue-tech-personal-homepage-project)
 
-# 🚀 JunXue-tech.github.io 个人主页项目
-
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
-
-> 纯静态个人主页模板，无需服务器，Fork即可使用
 
 ## 📁 项目目录结构
 ```
