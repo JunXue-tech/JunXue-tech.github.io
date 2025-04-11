@@ -34,7 +34,6 @@
 主要修改文件：
 ```bash
 index.html      # 修改主页内容
-_pages/*.html   # 编辑各子页面
 images/         # 替换您的图片
 ```
 
