@@ -273,6 +273,7 @@ and
             
 <h1 id="-news">🔥 News</h1>
 <ul>
+          <li><em>07.2026</em>, One journal paper accepted to IEEE Signal Processing Letters. <a href="10.1109/LSP.2026.3716160">Wavelet Enhanced Lip Forgery Learning for Talking Face Generation Detection</a></li>
         <li><em>07.2026</em>, One conference paper accepted to ACM MM 2026. <a href="https://arxiv.org/abs/2607.17761">Time-Frequency Consistency Learning for Robust Speech Deepfake Detection</a> [<a href="https://github.com/JunXue-tech/TFCL">Code</a>]</li>
       <li><em>06.2026</em>, One conference paper accepted to Interspeech 2026. <a href="https://arxiv.org/abs/2606.08038">Exploring the Scale and Diversity of Speech Anti-spoofing Datasets: Experiments and Analysis</a>.
     <li><em>05.2026</em>, One conference paper accepted to IJCAI 2026. <a href="https://arxiv.org/abs/2605.17737">Profiling the Voice: Speaker-Specific Phoneme Fingerprinting for Speech Deepfake Detection</a>. [<a href="https://github.com/JunXue-tech/PVP">Code</a>]</li>
@@ -342,13 +343,970 @@ and
   <li>B.Eng., School of Electronic Science and Technology, Anhui Science and Technology University</li>
 </ul>
 
-<h1 id="-publications">📝 Publications</h1>
+<!-- <h1 id="-publications">📝 Publications</h1>
 
 <p><strong><em>- Papers -</em></strong></p>
 <ul>
   <li>See my <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=YxoCHH4AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a></li>
-</ul>
+</ul> -->
 
+ <!-- ==================== Publications: START ==================== -->
+<h1 id="-publications">📝 Publications</h1>
+
+<div class="publication-legend">
+  <span><strong class="publication-owner-example">Jun Xue</strong> is highlighted.</span>
+  <span><sup>*</sup> Equal contribution.</span>
+  <span><sup>†</sup> Corresponding author.</span>
+
+  <span class="publication-note">
+    Equal-contribution and corresponding-author markers are shown according to
+    the author information of the corresponding publication.
+  </span>
+
+  <a
+    class="scholar-link"
+    href="https://scholar.google.com/citations?hl=zh-CN&user=YxoCHH4AAAAJ&view_op=list_works&sortby=pubdate"
+  >
+    Google Scholar
+  </a>
+</div>
+
+<div id="publication-list"></div>
+
+<style>
+  .publication-legend {
+    margin: 0.5rem 0 1.4rem;
+    padding: 0.85rem 1rem;
+    border-left: 4px solid #6f42c1;
+    border-radius: 4px;
+    background: #f7f7f9;
+    color: #494e52;
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .publication-legend > span {
+    margin-right: 0.9rem;
+  }
+
+  .publication-legend .publication-note {
+    display: block;
+    margin-top: 0.2rem;
+    color: #6c757d;
+    font-size: 0.84rem;
+  }
+
+  .publication-legend .scholar-link {
+    display: inline-block;
+    margin-top: 0.45rem;
+    font-weight: 600;
+  }
+
+  .publication-owner-example {
+    color: #7a3db8;
+    font-weight: 700;
+  }
+
+  .publication-group {
+    margin-top: 1.5rem;
+  }
+
+  .publication-group-title {
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 1.08rem;
+    font-weight: 700;
+  }
+
+  .publication-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: publication-counter;
+  }
+
+  .publication-item {
+    position: relative;
+    margin: 0 0 1rem;
+    padding: 0 0 1rem 2.55rem;
+    border-bottom: 1px dashed #e5e5e5;
+    counter-increment: publication-counter;
+  }
+
+  .publication-item::before {
+    content: counter(publication-counter) ".";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    color: #6c757d;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .publication-title {
+    margin-bottom: 0.22rem;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .publication-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .publication-title a:hover {
+    color: #52adc8;
+    text-decoration: underline;
+  }
+
+  .publication-authors {
+    margin-bottom: 0.18rem;
+    color: #494e52;
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+
+  .publication-author {
+    white-space: normal;
+  }
+
+  .publication-author.jun-xue {
+    color: #7a3db8;
+    font-weight: 700;
+  }
+
+  .publication-author sup,
+  .publication-legend sup {
+    margin-left: 1px;
+    color: #c0392b;
+    font-size: 0.72em;
+    font-weight: 700;
+  }
+
+  .publication-meta {
+    color: #6c757d;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .publication-venue {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .publication-status {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.05rem 0.38rem;
+    border: 1px solid #d9d9df;
+    border-radius: 999px;
+    background: #fafafa;
+    font-size: 0.76rem;
+    font-style: normal;
+    vertical-align: 1px;
+  }
+
+  @media (max-width: 600px) {
+    .publication-item {
+      padding-left: 2.15rem;
+    }
+
+    .publication-item::before {
+      width: 1.65rem;
+    }
+
+    .publication-legend > span {
+      display: block;
+      margin-right: 0;
+    }
+  }
+</style>
+
+<script>
+(function () {
+  "use strict";
+
+  const publications = [
+    {
+      date: "2026-07",
+      venue: "ACM MM 2026",
+      status: "Conference Paper",
+      title: "Time-Frequency Consistency Learning for Robust Speech Deepfake Detection",
+      url: "https://arxiv.org/abs/2607.17761",
+      authors: [
+        "Jun Xue",
+        "Zhuolin Yi",
+        "Yanzhen Ren",
+        "Yihuan Huang",
+        "Jiayu Xiong",
+        "Yi Chai",
+        "Guanxiang Feng",
+        "Jiajun Liu",
+        "Tong Zhang"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2026-05",
+      venue: "IJCAI 2026",
+      status: "Conference Paper",
+      title: "Profiling the Voice: Speaker-Specific Phoneme Fingerprinting for Speech Deepfake Detection",
+      url: "https://arxiv.org/abs/2605.17737",
+      authors: [
+        "Jun Xue",
+        "Tong Zhang",
+        "Zhuolin Yi",
+        "Yihuan Huang",
+        "Yi Chai",
+        "Yiyang Zhang",
+        "Yanzhen Ren"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2026-04",
+      venue: "Findings of ACL 2026",
+      status: "Conference Paper",
+      title: "RTCFake: Speech Deepfake Detection in Real-Time Communication",
+      url: "https://arxiv.org/abs/2604.23742",
+      authors: [
+        "Jun Xue",
+        "Zhuolin Yi",
+        "Yihuan Huang",
+        "Yanzhen Ren",
+        "Yujie Chen",
+        "Cunhang Fan",
+        "Zicheng Su",
+        "Yongcheng Zhang",
+        "Bo Cai"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2026-03",
+      venue: "arXiv preprint",
+      status: "Preprint",
+      title: "How Well Do Current Speech Deepfake Detection Methods Generalize to the Real World?",
+      url: "https://arxiv.org/abs/2603.05852",
+      authors: [
+        "Daixian Li",
+        "Jun Xue",
+        "Yanzhen Ren",
+        "Zhuolin Yi",
+        "Yihuan Huang",
+        "Guanxiang Feng",
+        "Yi Chai"
+      ],
+      equalContribution: [
+        "Daixian Li",
+        "Jun Xue"
+      ],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2026-01",
+      venue: "arXiv preprint",
+      status: "Preprint",
+      title: "Unifying Speech Editing Detection and Content Localization via Prior-Enhanced Audio LLMs",
+      url: "https://arxiv.org/abs/2601.21463",
+      authors: [
+        "Jun Xue",
+        "Yi Chai",
+        "Yanzhen Ren",
+        "Jinshen He",
+        "Zhiqiang Tang",
+        "Zhuolin Yi",
+        "Yihuan Huang",
+        "Yuankun Xie",
+        "Yujie Chen"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2024-07",
+      venue: "IEEE Signal Processing Letters, 31: 2305–2309",
+      status: "Journal Article",
+      title: "Dynamic Ensemble Teacher-Student Distillation Framework for Light-Weight Fake Audio Detection",
+      url: "https://doi.org/10.1109/LSP.2024.3431936",
+      authors: [
+        "Jun Xue",
+        "Cunhang Fan",
+        "Jiangyan Yi",
+        "Jian Zhou",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2024-07",
+      venue: "Neural Networks, 175: 106320",
+      status: "Journal Article",
+      title: "Spatial Reconstructed Local Attention Res2Net with F0 Subband for Fake Speech Detection",
+      url: "https://arxiv.org/abs/2308.09944",
+      authors: [
+        "Cunhang Fan",
+        "Jun Xue",
+        "Jianhua Tao",
+        "Jiangyan Yi",
+        "Chenglong Wang",
+        "Chengshi Zheng",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2024-04",
+      venue: "ICASSP 2024",
+      status: "Conference Paper",
+      title: "PseKD: Phase-Shift Encoded Knowledge Distillation for Oriented Object Detection in Remote Sensing Images",
+      url: "https://doi.org/10.1109/ICASSP48485.2024.10447000",
+      authors: [
+        "Chao Wang",
+        "Yubiao Yue",
+        "Bingchun Luo",
+        "Yujie Chen",
+        "Jun Xue"
+      ],
+      equalContribution: [],
+      corresponding: [
+        "Jun Xue"
+      ],
+      major: true
+    },
+    {
+      date: "2023-11",
+      venue: "Speech Communication, 155: 102988",
+      status: "Journal Article",
+      title: "Subband Fusion of Complex Spectrogram for Fake Speech Detection",
+      url: "https://doi.org/10.1016/j.specom.2023.102988",
+      authors: [
+        "Cunhang Fan",
+        "Jun Xue",
+        "Shunbo Dong",
+        "Mingming Ding",
+        "Jiangyan Yi",
+        "Jinpeng Li",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2023-06",
+      venue: "ICASSP 2023",
+      status: "Conference Paper",
+      title: "Learning From Yourself: A Self-Distillation Method for Fake Speech Detection",
+      url: "https://arxiv.org/abs/2303.01211",
+      authors: [
+        "Jun Xue",
+        "Cunhang Fan",
+        "Jiangyan Yi",
+        "Chenglong Wang",
+        "Zhengqi Wen",
+        "Dan Zhang",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2023-06",
+      venue: "DADA @ IJCAI 2023",
+      status: "Workshop Paper",
+      title: "Multi-perspective Information Fusion Res2Net with Random Specmix for Fake Speech Detection",
+      url: "https://arxiv.org/abs/2306.15389",
+      authors: [
+        "Shunbo Dong",
+        "Jun Xue",
+        "Cunhang Fan",
+        "Kang Zhu",
+        "Yujie Chen",
+        "Zhao Lv"
+      ],
+      equalContribution: [
+        "Shunbo Dong",
+        "Jun Xue"
+      ],
+      corresponding: [],
+      major: true
+    },
+    {
+      date: "2022-10",
+      venue: "DDAM @ ACM MM 2022",
+      status: "Workshop Paper",
+      title: "Audio Deepfake Detection Based on a Combination of F0 Information and Real Plus Imaginary Spectrogram Features",
+      url: "https://arxiv.org/abs/2208.01214",
+      authors: [
+        "Jun Xue",
+        "Cunhang Fan",
+        "Zhao Lv",
+        "Jianhua Tao",
+        "Jiangyan Yi",
+        "Chengshi Zheng",
+        "Zhengqi Wen",
+        "Minmin Yuan",
+        "Shegang Shao"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: true
+    },
+
+    {
+      date: "2026-06",
+      venue: "Interspeech 2026",
+      status: "Conference Paper",
+      title: "Exploring the Scale and Diversity of Speech Anti-spoofing Datasets: Experiments and Analysis",
+      url: "https://arxiv.org/abs/2606.08038",
+      authors: [
+        "Zhuolin Yi",
+        "Jun Xue",
+        "Yanzhen Ren",
+        "Yihuan Huang",
+        "Yi Chai",
+        "Daixian Li",
+        "Guanxiang Feng",
+        "Jiajun Liu"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2026-05",
+      venue: "ICML 2026",
+      status: "Conference Paper",
+      title: "Geometry-based Schrödinger Bridges for Trustworthy Multimodal Fusion",
+      url: "https://arxiv.org/abs/2605.31193",
+      authors: [
+        "Jiayu Xiong",
+        "Jing Wang",
+        "Qi Zhang",
+        "Wanlong Wang",
+        "Jun Xue"
+      ],
+      equalContribution: [],
+      corresponding: [
+        "Jing Wang",
+        "Qi Zhang"
+      ],
+      major: false
+    },
+    {
+      date: "2026-05",
+      venue: "ICML 2026",
+      status: "Conference Paper",
+      title: "Multimodal Fusion via Self-Consistent Task-Gradient Fields",
+      url: "https://arxiv.org/abs/2410.15475",
+      authors: [
+        "Jiayu Xiong",
+        "Jing Wang",
+        "Jun Xue",
+        "Wanlong Wang",
+        "Jianlong Kwan",
+        "Xiaosen Lyu",
+        "Zhouqiang Jiang"
+      ],
+      equalContribution: [],
+      corresponding: [
+        "Jing Wang"
+      ],
+      major: false
+    },
+    {
+      date: "2026-04",
+      venue: "ICASSP 2026",
+      status: "Conference Paper",
+      title: "Efficient Audio Transformer and AASIST for Environment Sound Deepfake Detection in the ESDD 2026 Challenge",
+      url: "https://ieeexplore.ieee.org/document/11464115",
+      authors: [
+        "Junqin Cao",
+        "Cunhang Fan",
+        "Jun Xue",
+        "Yuankun Xie",
+        "Ruibo Fu",
+        "Zhengqi Wen",
+        "Jiangyan Yi",
+        "Yanzhen Ren",
+        "Zhao Lv",
+        "Jianhua Tao"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2026-04",
+      venue: "ICASSP 2026",
+      status: "Conference Paper",
+      title: "Multi-Scale Physiologically-Motivated Alignment for Auditory Attention Decoding",
+      url: "https://ieeexplore.ieee.org/document/11462957",
+      authors: [
+        "Yuxuan Ma",
+        "Xiaoke Yang",
+        "Tongxi Chen",
+        "Jun Xue",
+        "Jinqiu Sang"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2026-03",
+      venue: "CVPR 2026",
+      status: "Conference Paper",
+      title: "Inconsistency-aware Multimodal Schrödinger Bridge for Deepfake Localization",
+      url: "https://openaccess.thecvf.com/content/CVPR2026/html/Xiong_Inconsistency-aware_Multimodal_Schrodinger_Bridge_for_Deepfake_Localization_CVPR_2026_paper.html",
+      authors: [
+        "Jiayu Xiong",
+        "Jing Wang",
+        "Qi Zhang",
+        "Wanlong Wang",
+        "Jun Xue"
+      ],
+      equalContribution: [],
+      corresponding: [
+        "Jing Wang",
+        "Qi Zhang"
+      ],
+      major: false
+    },
+    {
+      date: "2026-03",
+      venue: "CVPR 2026",
+      status: "Conference Paper",
+      title: "When AVSR Meets Video Conferencing: Dataset, Degradation, and the Hidden Mechanism Behind Performance Collapse",
+      url: "https://arxiv.org/abs/2603.22915",
+      authors: [
+        "Yihuan Huang",
+        "Jun Xue",
+        "Jiajun Liu",
+        "Daixian Li",
+        "Tong Zhang",
+        "Zhuolin Yi",
+        "Yanzhen Ren",
+        "Kai Li"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2026-03",
+      venue: "ICME 2026",
+      status: "Conference Paper",
+      title: "PASE: Phoneme-Aware Speech Encoder to Improve Lip Sync Accuracy for Talking Head Synthesis",
+      url: "https://arxiv.org/abs/2504.05803",
+      authors: [
+        "Yihuan Huang",
+        "Jiajun Liu",
+        "Yanzhen Ren",
+        "Jun Xue",
+        "Wuyang Liu",
+        "Zongkun Sun"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2026-01",
+      venue: "Pattern Recognition, 175: 113133",
+      status: "Journal Article",
+      title: "Masked Autoencoders for Spatio-Temporal Audio Representations: Theory and Optimization",
+      url: "https://doi.org/10.1016/j.patcog.2026.113133",
+      authors: [
+        "Jiayu Xiong",
+        "Jing Wang",
+        "Wanlong Wang",
+        "Xiaosen Lyu",
+        "Jianlong Kwan",
+        "Jun Xue"
+      ],
+      equalContribution: [],
+      corresponding: [
+        "Jing Wang"
+      ],
+      major: false
+    },
+    {
+      date: "2025-07",
+      venue: "ICIC 2025",
+      status: "Conference Paper",
+      title: "HERMES: Heterogeneous Mixture of Experts Based on Segments for Auditory Attention Decoding",
+      url: "https://doi.org/10.1007/978-981-95-0027-7_16",
+      authors: [
+        "Yuxuan Ma",
+        "Jun Xue",
+        "Jinqiu Sang"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2025-04",
+      venue: "AAAI 2025",
+      status: "Conference Paper",
+      title: "Region-Based Optimization in Continual Learning for Audio Deepfake Detection",
+      url: "https://doi.org/10.1609/aaai.v39i22.34535",
+      authors: [
+        "Yujie Chen",
+        "Jiangyan Yi",
+        "Cunhang Fan",
+        "Jianhua Tao",
+        "Yong Ren",
+        "Siding Zeng",
+        "Chu Yuan Zhang",
+        "Xinrui Yan",
+        "Hao Gu",
+        "Jun Xue",
+        "Chenglong Wang",
+        "Zhao Lv",
+        "Xiaohui Zhang"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2025-04",
+      venue: "ICASSP 2025",
+      status: "Conference Paper",
+      title: "MpoxMamba: A Grouped Mamba-based Lightweight Hybrid Network for Mpox Detection",
+      url: "https://doi.org/10.1109/ICASSP49660.2025.10888345",
+      authors: [
+        "Yubiao Yue",
+        "Jun Xue",
+        "Haihuang Liang",
+        "Zhenzhang Li",
+        "Yufeng Wang"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2025-01",
+      venue: "IEEE Transactions on Affective Computing, 16(1): 207–222",
+      status: "Journal Article",
+      title: "Multi-Level Contrastive Learning: Hierarchical Alleviation of Heterogeneity in Multimodal Sentiment Analysis",
+      url: "https://dblp.org/rec/journals/taffco/FanZTYXL25",
+      authors: [
+        "Cunhang Fan",
+        "Kang Zhu",
+        "Jianhua Tao",
+        "Guofeng Yi",
+        "Jun Xue",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2024-11",
+      venue: "Neural Networks, 179: 106580",
+      status: "Journal Article",
+      title: "DGSD: Dynamical Graph Self-Distillation for EEG-Based Auditory Spatial Attention Detection",
+      url: "https://doi.org/10.1016/j.neunet.2024.106580",
+      authors: [
+        "Cunhang Fan",
+        "Hongyu Zhang",
+        "Wei Huang",
+        "Jun Xue",
+        "Jianhua Tao",
+        "Jiangyan Yi",
+        "Zhao Lv",
+        "Xiaopei Wu"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2024-09",
+      venue: "Interspeech 2024",
+      status: "Conference Paper",
+      title: "RawBMamba: End-to-End Bidirectional State Space Model for Audio Deepfake Detection",
+      url: "https://arxiv.org/abs/2406.06086",
+      authors: [
+        "Yujie Chen",
+        "Jiangyan Yi",
+        "Jun Xue",
+        "Chenglong Wang",
+        "Xiaohui Zhang",
+        "Shunbo Dong",
+        "Siding Zeng",
+        "Jianhua Tao",
+        "Zhao Lv",
+        "Cunhang Fan"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2024-09",
+      venue: "Interspeech 2024",
+      status: "Conference Paper",
+      title: "Frequency-mix Knowledge Distillation for Fake Speech Detection",
+      url: "https://arxiv.org/abs/2406.09664",
+      authors: [
+        "Cunhang Fan",
+        "Shunbo Dong",
+        "Jun Xue",
+        "Yujie Chen",
+        "Jiangyan Yi",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2024-07",
+      venue: "ICME 2024",
+      status: "Conference Paper",
+      title: "Dual-View Multimodal Interaction in Multimodal Sentiment Analysis",
+      url: "https://dblp.org/rec/conf/icmcs/ZhuF0XXLLWL24",
+      authors: [
+        "Kang Zhu",
+        "Cunhang Fan",
+        "Jianhua Tao",
+        "Jun Xue",
+        "Heng Xie",
+        "Xuefei Liu",
+        "Yongwei Li",
+        "Zhengqi Wen",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2024-06",
+      venue: "IJCNN 2024",
+      status: "Conference Paper",
+      title: "A Debiased Domain Adaptation Framework with Minimum Class Confusion for Motor Imagery Decoding",
+      url: "https://dblp.org/rec/conf/ijcnn/FanCSLXLL24",
+      authors: [
+        "Cunhang Fan",
+        "Zhen Chen",
+        "Xun Song",
+        "Xinhui Li",
+        "Jun Xue",
+        "Ping Li",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2024-03",
+      venue: "AAAI 2024",
+      status: "Conference Paper",
+      title: "Progressive Distillation Based on Masked Generation Feature Method for Knowledge Graph Completion",
+      url: "https://doi.org/10.1609/aaai.v38i8.28680",
+      authors: [
+        "Cunhang Fan",
+        "Yujie Chen",
+        "Jun Xue",
+        "Yonghui Kong",
+        "Jianhua Tao",
+        "Zhao Lv"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2023-08",
+      venue: "arXiv preprint",
+      status: "Preprint",
+      title: "US-SFNet: A Spatial-Frequency Domain-based Multi-branch Network for Cervical Lymph Node Lesions Diagnoses in Ultrasound Images",
+      url: "https://arxiv.org/abs/2308.16738",
+      authors: [
+        "Yubiao Yue",
+        "Jun Xue",
+        "Haihua Liang",
+        "Bingchun Luo",
+        "Zhenzhang Li"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    },
+    {
+      date: "2023-08",
+      venue: "arXiv preprint",
+      status: "Preprint",
+      title: "U-SEANNet: A Simple, Efficient and Applied U-Shaped Network for Diagnosis of Nasal Diseases on Nasal Endoscopic Images",
+      url: "https://arxiv.org/abs/2308.14081",
+      authors: [
+        "Yubiao Yue",
+        "Jun Xue",
+        "Chao Wang",
+        "Haihua Liang",
+        "Zhenzhang Li"
+      ],
+      equalContribution: [],
+      corresponding: [],
+      major: false
+    }
+  ];
+
+  const ownerName = "Jun Xue";
+  const root = document.getElementById("publication-list");
+
+  if (!root) {
+    return;
+  }
+
+  const normalizedDate = (date) => {
+    const parts = String(date).split("-");
+    const year = parts[0] || "0000";
+    const month = parts[1] || "00";
+
+    return `${year}-${month.padStart(2, "0")}`;
+  };
+
+  const escapeHtml = (value) =>
+    String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+  const sortedPublications = [...publications].sort((a, b) => {
+    if (Boolean(a.major) !== Boolean(b.major)) {
+      return a.major ? -1 : 1;
+    }
+
+    return normalizedDate(b.date).localeCompare(normalizedDate(a.date));
+  });
+
+  const renderAuthor = (
+    name,
+    equalContributionAuthors,
+    correspondingAuthors
+  ) => {
+    const isJunXue = name === ownerName;
+    const isEqualContribution = equalContributionAuthors.includes(name);
+    const isCorresponding = correspondingAuthors.includes(name);
+
+    const classes = [
+      "publication-author",
+      isJunXue ? "jun-xue" : ""
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    const markers = [
+      isEqualContribution ? "<sup>*</sup>" : "",
+      isCorresponding ? "<sup>†</sup>" : ""
+    ].join("");
+
+    return `
+      <span class="${classes}">
+        ${escapeHtml(name)}${markers}
+      </span>
+    `.trim();
+  };
+
+  const renderPaper = (paper) => {
+    const equalContributionAuthors = paper.equalContribution || [];
+    const correspondingAuthors = paper.corresponding || [];
+
+    const authors = paper.authors
+      .map((name) =>
+        renderAuthor(
+          name,
+          equalContributionAuthors,
+          correspondingAuthors
+        )
+      )
+      .join(", ");
+
+    return `
+      <li class="publication-item">
+        <div class="publication-title">
+          <a
+            href="${escapeHtml(paper.url)}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ${escapeHtml(paper.title)}
+          </a>
+        </div>
+
+        <div class="publication-authors">
+          ${authors}
+        </div>
+
+        <div class="publication-meta">
+          <span class="publication-venue">
+            ${escapeHtml(paper.venue)}
+          </span>,
+          <span>${escapeHtml(paper.date)}</span>
+          <span class="publication-status">
+            ${escapeHtml(paper.status)}
+          </span>
+        </div>
+      </li>
+    `;
+  };
+
+  const groups = [
+    {
+      title: "Major Publications",
+      papers: sortedPublications.filter((paper) => paper.major)
+    },
+    {
+      title: "Other Publications",
+      papers: sortedPublications.filter((paper) => !paper.major)
+    }
+  ];
+
+  root.innerHTML = groups
+    .map((group) => `
+      <section class="publication-group">
+        <h2 class="publication-group-title">
+          ${group.title} (${group.papers.length})
+        </h2>
+
+        <ol class="publication-list">
+          ${group.papers.map(renderPaper).join("")}
+        </ol>
+      </section>
+    `)
+    .join("");
+})();
+</script>
+<!-- ===================== Publications: END ===================== -->
+
+            
 <!-- Visitor Counter -->
 <div class="w3-light-grey w3-center w3-padding-24" style="margin-top: 20px;">
   <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
